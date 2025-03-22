@@ -7,5 +7,12 @@ export default defineConfig({
     server: {
         port: 50976,
     },
-    base: '/'
+    base: '/',
+    build: {
+        rollupOptions: {
+            input: {
+                main: 'index.html',
+            },
+        },
+    },
 })
